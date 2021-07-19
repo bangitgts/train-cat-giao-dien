@@ -15,29 +15,81 @@ html {
     background-color: #000;
 }
 
-#nav li {
+#nav {
     display: inline-block;
 }
 
-#nav li:hover a {
+#nav>li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li:hover>a {
     color: #000;
     background-color: #ccc;
     display: inline-block;
 }
 
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
 #nav li a {
     text-decoration: none;
-    color: #fff;
     line-height: 46.22px;
     padding: 0px 24px;
-    text-transform: uppercase;
 }
 
 #nav .subnav {
     display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#slider {}
+#nav .subnav a {
+    padding: 0 16px;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+    display: block;
+    cursor: pointer;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46.22px;
+    padding: 0 21px;
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #fff;
+}
 
 #content {}
 
